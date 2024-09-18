@@ -24,8 +24,7 @@ pipeline {
     stage('Almacenar txt') {
       steps {
         script {
-          // Almacenar el archivo en el directorio del workspace de Jenkins
-          def workspace = pwd()  // Obtener el directorio del workspace
+          // Almacenar el archivo en el directorio del workspace de Jenkins          
           writeFile(file: "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Ejercicio 5\\Edad.txt", text: cadena)
           println("El fichero fue escrito en")
         }
