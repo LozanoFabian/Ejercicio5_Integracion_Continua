@@ -1,4 +1,4 @@
-def fechaNacimiento = Date.parse("dd/MM/yyyy", "30/08/1990")
+def fechaNacimiento = new Date(90, 7, 30)
 def edad
 def cadena
 
