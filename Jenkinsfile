@@ -1,4 +1,4 @@
-def fechaNacimiento = new Date(1990, 7, 30)
+def fechaNacimiento = 1990
 def edad
 def cadena
 
