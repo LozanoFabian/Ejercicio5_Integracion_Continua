@@ -1,4 +1,4 @@
-def fechaNacimiento = new Date().parse("dd/MM/yyyy", "30/08/1990")
+def fechaNacimiento = new SimpleDateFormat("dd/MM/yyyy").parse("30/08/1990")
 def edad
 def cadena
 
