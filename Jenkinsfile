@@ -9,7 +9,7 @@ pipeline {
     stage('Calcular edad') {
       steps {
         script {
-          year = new Date().getYear().toInteger()  
+          year = new Date().getYear()+ 1900
           print("La fecha actual es ${year}")
           edad = year - fechaNacimiento
 
