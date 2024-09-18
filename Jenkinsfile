@@ -9,10 +9,8 @@ pipeline {
     stage('Calcular edad') {
       steps {
         script {
-          def currentDate = new Date()
-          def currentYear = currentDate.format('yyyy') as Integer
-          def birthYear = fechaNacimiento.format('yyyy') as Integer        
-          edad = currentYear - birthYear
+          year = new Date().getYear()       
+          edad = currentYear - fechaNacimiento
 
           // Actualiza la cadena después de calcular la edad
           cadena = "La edad es: ${edad}"
