@@ -5,7 +5,7 @@ def cadena= "La edad es: ${edad}"
 pipeline
 {
   agent any
-  stage(calcular edad)
+  stages("calcular edad")
   {
     steps
     {
@@ -20,7 +20,7 @@ pipeline
     }
   }
 
-  stage(Almacenar txt)
+  stages("Almacenar txt")
   {
     steps
     {
